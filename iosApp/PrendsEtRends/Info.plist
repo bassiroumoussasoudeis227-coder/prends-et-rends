@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>fr</string>
+	<key>CFBundleDisplayName</key>
+	<string>Prends &amp; Rends</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.aistudio.prendsetrends.qxvbkp</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+	</dict>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Prends &amp; Rends utilise votre position GPS pour localiser précisément le lieu d'emprunt ou de prêt et l'afficher sur la carte satellite.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Prends &amp; Rends utilise l'appareil photo pour filmer et photographier les objets prêtés ou empruntés.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Prends &amp; Rends enregistre des mémos vocaux pour consigner l'état ou les conditions du prêt.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Prends &amp; Rends accède à vos photos et vidéos pour ajouter des preuves et détails aux prêts.</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>arm64</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,6 @@
+{
+  "name": "Prends & Rends",
+  "description": "Gestion et suivi des prêts et emprunts d'objets ou d'argent entre proches.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

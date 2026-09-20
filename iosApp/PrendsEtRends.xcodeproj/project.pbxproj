@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		222222222222222222222210 /* PrendsEtRendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111110 /* PrendsEtRendsApp.swift */; };
+		222222222222222222222211 /* LoanItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111111 /* LoanItem.swift */; };
+		222222222222222222222212 /* FirebaseLoansService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111112 /* FirebaseLoansService.swift */; };
+		222222222222222222222213 /* LoansRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111113 /* LoansRepository.swift */; };
+		222222222222222222222214 /* LoansViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111114 /* LoansViewModel.swift */; };
+		222222222222222222222215 /* StatsSummaryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111115 /* StatsSummaryHeader.swift */; };
+		222222222222222222222216 /* LoanCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111116 /* LoanCardView.swift */; };
+		222222222222222222222217 /* AddLoanSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111117 /* AddLoanSheet.swift */; };
+		222222222222222222222218 /* LoansDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111118 /* LoansDashboardView.swift */; };
+		222222222222222222222219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111111111111111111111119 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		111111111111111111111101 /* PrendsEtRends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrendsEtRends.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		111111111111111111111110 /* PrendsEtRendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrendsEtRendsApp.swift; sourceTree = "<group>"; };
+		111111111111111111111111 /* LoanItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanItem.swift; sourceTree = "<group>"; };
+		111111111111111111111112 /* FirebaseLoansService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLoansService.swift; sourceTree = "<group>"; };
+		111111111111111111111113 /* LoansRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoansRepository.swift; sourceTree = "<group>"; };
+		111111111111111111111114 /* LoansViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoansViewModel.swift; sourceTree = "<group>"; };
+		111111111111111111111115 /* StatsSummaryHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsSummaryHeader.swift; sourceTree = "<group>"; };
+		111111111111111111111116 /* LoanCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCardView.swift; sourceTree = "<group>"; };
+		111111111111111111111117 /* AddLoanSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLoanSheet.swift; sourceTree = "<group>"; };
+		111111111111111111111118 /* LoansDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoansDashboardView.swift; sourceTree = "<group>"; };
+		111111111111111111111119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		111111111111111111111120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		333333333333333333333301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		444444444444444444444401 = {
+			isa = PBXGroup;
+			children = (
+				444444444444444444444402 /* PrendsEtRends */,
+				444444444444444444444403 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		444444444444444444444402 /* PrendsEtRends */ = {
+			isa = PBXGroup;
+			children = (
+				444444444444444444444404 /* App */,
+				444444444444444444444405 /* Models */,
+				444444444444444444444406 /* Services */,
+				444444444444444444444407 /* ViewModels */,
+				444444444444444444444408 /* Views */,
+				111111111111111111111119 /* Assets.xcassets */,
+				111111111111111111111120 /* Info.plist */,
+			);
+			path = PrendsEtRends;
+			sourceTree = "<group>";
+		};
+		444444444444444444444403 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				111111111111111111111101 /* PrendsEtRends.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		444444444444444444444404 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				111111111111111111111110 /* PrendsEtRendsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		444444444444444444444405 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				111111111111111111111111 /* LoanItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		444444444444444444444406 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				111111111111111111111112 /* FirebaseLoansService.swift */,
+				111111111111111111111113 /* LoansRepository.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		444444444444444444444407 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				111111111111111111111114 /* LoansViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		444444444444444444444408 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				111111111111111111111115 /* StatsSummaryHeader.swift */,
+				111111111111111111111116 /* LoanCardView.swift */,
+				111111111111111111111117 /* AddLoanSheet.swift */,
+				111111111111111111111118 /* LoansDashboardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		555555555555555555555501 /* PrendsEtRends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 666666666666666666666601 /* Build configuration list for PBXNativeTarget "PrendsEtRends" */;
+			buildPhases = (
+				777777777777777777777701 /* Sources */,
+				333333333333333333333301 /* Frameworks */,
+				888888888888888888888801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrendsEtRends;
+			productName = PrendsEtRends;
+			productReference = 111111111111111111111101 /* PrendsEtRends.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		999999999999999999999901 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					555555555555555555555501 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 666666666666666666666602 /* Build configuration list for PBXProject "PrendsEtRends" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = fr;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				fr,
+				Base,
+			);
+			mainGroup = 444444444444444444444401;
+			productRefGroup = 444444444444444444444403 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				555555555555555555555501 /* PrendsEtRends */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		888888888888888888888801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222222222222222222222219 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		777777777777777777777701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222222222222222222222210 /* PrendsEtRendsApp.swift in Sources */,
+				222222222222222222222211 /* LoanItem.swift in Sources */,
+				222222222222222222222212 /* FirebaseLoansService.swift in Sources */,
+				222222222222222222222213 /* LoansRepository.swift in Sources */,
+				222222222222222222222214 /* LoansViewModel.swift in Sources */,
+				222222222222222222222215 /* StatsSummaryHeader.swift in Sources */,
+				222222222222222222222216 /* LoanCardView.swift in Sources */,
+				222222222222222222222217 /* AddLoanSheet.swift in Sources */,
+				222222222222222222222218 /* LoansDashboardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AAAAAAA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDEFINED_VARIABLES = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAAAAAA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDEFINED_VARIABLES = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBBBBBB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PrendsEtRends/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Prends & Rends";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aistudio.prendsetrends.qxvbkp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBBBBBB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PrendsEtRends/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Prends & Rends";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aistudio.prendsetrends.qxvbkp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		666666666666666666666601 /* Build configuration list for PBXNativeTarget "PrendsEtRends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBBBBBB1 /* Debug */,
+				BBBBBBB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		666666666666666666666602 /* Build configuration list for PBXProject "PrendsEtRends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAAAAAA1 /* Debug */,
+				AAAAAAA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 999999999999999999999901 /* Project object */;
+}

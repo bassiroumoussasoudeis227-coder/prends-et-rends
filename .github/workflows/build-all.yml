@@ -1,0 +1,85 @@
+name: Build All (Android & iOS)
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-android:
+    name: 🤖 Build Android APK
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Cache Gradle dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x ./gradlew
+
+      - name: Build Android APK
+        run: ./gradlew assembleDebug --no-daemon --stacktrace
+
+      - name: Upload Android APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: PrendsEtRends-Android-APK
+          path: app/build/outputs/apk/debug/*.apk
+          retention-days: 14
+
+  build-ios:
+    name: 🍎 Build iOS Unsigned IPA
+    runs-on: macos-14
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -switch /Applications/Xcode_15.4.app || sudo xcode-select -switch /Applications/Xcode.app
+
+      - name: Build iOS Application (Unsigned)
+        run: |
+          xcodebuild -project iosApp/PrendsEtRends.xcodeproj \
+            -scheme PrendsEtRends \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath build/derivedData \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            clean build
+
+      - name: Package PrendsEtRends-Unsigned.ipa
+        run: |
+          mkdir -p build/Payload
+          APP_PATH=$(find build/derivedData -name "PrendsEtRends.app" -type d | head -n 1)
+          echo "Found compiled app at: $APP_PATH"
+          cp -R "$APP_PATH" build/Payload/
+          cd build
+          zip -qry PrendsEtRends-Unsigned.ipa Payload
+          echo "Archive PrendsEtRends-Unsigned.ipa packaged successfully."
+
+      - name: Upload iOS IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: PrendsEtRends-iOS-Unsigned-IPA
+          path: build/PrendsEtRends-Unsigned.ipa
+          retention-days: 14

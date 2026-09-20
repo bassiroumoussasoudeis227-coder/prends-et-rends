@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Prends &amp; Rends</string>
+    <string name="subtitle">Gestion des prêts &amp; emprunts</string>
+    <string name="lent_tab">Je prête</string>
+    <string name="borrowed_tab">J\'emprunte</string>
+    <string name="all_tab">Tous</string>
+    <string name="overdue_tab">En retard</string>
+    <string name="returned_tab">Rendus</string>
+    <string name="add_item">Ajouter un prêt / emprunt</string>
+    <string name="mark_returned">Marquer comme rendu</string>
+</resources>
